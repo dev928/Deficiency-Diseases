@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deficiency Diseases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Deficiency Diseases</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" data-category="vitamins">Vitamins</a></li>
+            <li><a href="#" data-category="minerals">Minerals</a></li>
+            <li><a href="#" data-category="all">All</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="diseases-container">
+            <!-- Diseases will be dynamically added here by JavaScript -->
+        </section>
+    </main>
+
+    <!-- Modal / Popup -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <h3>Symptoms</h3>
+            <ul id="modal-symptoms"></ul>
+            <h3>Prevention</h3>
+            <p id="modal-prevention"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
